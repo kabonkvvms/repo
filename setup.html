@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Music Bridge Setup Guide</title>
+<style>
+  body { margin: 0; background: #edf3f8; color: #15283b; font: 16px/1.55 Helvetica, Arial, sans-serif; }
+  header { background: #173a60; color: white; padding: 18px 22px; }
+  header a { color: #e3f2ff; }
+  main { max-width: 44em; margin: 0 auto; padding: 12px 22px 32px; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin-top: 24px; }
+  li { margin: 7px 0; }
+  a { color: #174b77; }
+  pre { overflow: auto; background: white; border: 1px solid #c8d8e5; padding: 10px; }
+</style>
+<header>
+  <h1>Music Bridge Setup Guide</h1>
+  <a href="./">Back to Music Bridge</a>
+</header>
+<main>
+  <p>Music Bridge plays Spotify or Amazon Music in Microsoft Edge on your Windows PC and streams the audio to your jailbroken iPhone 3GS over Wi-Fi. Keep the PC and Edge running while you listen.</p>
+  <p>Already set up on Windows? <a href="#iphone">Skip to the iPhone install</a>.</p>
+
+  <h2>1. Set up Windows</h2>
+  <p>Keep the complete Windows Music Bridge folder together, including <strong>Start Music Bridge.cmd</strong> and <strong>link-code.txt</strong>.</p>
+  <ol>
+    <li>Install 64-bit Python 3.13. Enable <strong>Add Python to PATH</strong> if the installer offers it. <a href="https://www.python.org/downloads/windows/">Python for Windows</a></li>
+    <li>Install Microsoft Edge if it’s missing. <a href="https://www.microsoft.com/edge/download">Microsoft Edge</a></li>
+    <li>Download and extract a Windows build of FFmpeg. Search Windows for <strong>Edit environment variables for your account</strong>, open your user <strong>Path</strong>, and add the folder that contains <code>ffmpeg.exe</code>. Open a new PowerShell window after saving. <a href="https://ffmpeg.org/download.html#build-windows">FFmpeg downloads</a></li>
+    <li>Install VB-CABLE. Extract the download, run the installer that matches your Windows architecture as administrator, and choose <strong>Install Driver</strong>. Restart if prompted. Confirm that <strong>CABLE Input (VB-Audio Virtual Cable)</strong> appears in Windows Sound settings. <a href="https://vb-audio.com/Cable/">VB-CABLE download</a></li>
+    <li>Install the Python packages and check FFmpeg from a new PowerShell window.
+      <pre><code>py -3.13 -m pip install PyAudioWPatch winrt-Windows.Media.Control playwright
+ffmpeg -version</code></pre>
+      If you installed Python 3.13 and Windows doesn’t recognize <code>py</code>, use <code>python</code> in its place and omit <code>-3.13</code>.
+    </li>
+  </ol>
+
+  <h2>2. Start the bridge</h2>
+  <ol>
+    <li>Double-click <strong>Start Music Bridge.cmd</strong>. Choose <strong>1</strong> for Amazon Music or <strong>2</strong> for Spotify.</li>
+    <li>Sign in directly in the dedicated Edge window. Play a song so Edge appears in <strong>Windows Settings → System → Sound → Volume mixer</strong>.</li>
+    <li>Set Edge’s output to <strong>CABLE Input</strong> or <strong>Music Bridge</strong>, whichever matches the launcher's <strong>Capturing</strong> line. Keep your normal speakers or headphones as the Windows default.</li>
+    <li>If Windows Firewall prompts you, allow Python on <strong>Private networks</strong>. Connect the iPhone and PC to the same local network.</li>
+    <li>Copy the full LAN address printed after <strong>Open on iOS Safari</strong>, including port <strong>8096</strong> and the code after it. Leave the launcher and Edge open.</li>
+  </ol>
+  <p>To switch services, press <strong>Ctrl+C</strong> in the launcher or close the dedicated Edge window. Reopen the launcher and choose the other service.</p>
+
+  <h2 id="iphone">3. Install the iPhone app</h2>
+  <ol>
+    <li>On the jailbroken iPhone running iOS 6, open <strong>Cydia → Manage → Sources → Edit → Add</strong>.</li>
+    <li>Add <a href="https://kabonkvvms.github.io/repo/">https://kabonkvvms.github.io/repo/</a>. If the source is already listed, refresh it.</li>
+    <li>Install or upgrade <strong>Music Bridge</strong>. Cydia installs the Retro Icons package and WinterBoard when needed. Follow any prompt to respring.</li>
+    <li>Open the app and enter the full playback address from the Windows launcher under <strong>Settings</strong>. Tap <strong>Done</strong> on the keyboard.</li>
+  </ol>
+
+  <h2>4. Listen and control playback</h2>
+  <ul>
+    <li>Tap <strong>Home → Listen on iPhone</strong>. <strong>Play</strong> controls Edge and can resume the current song or replay a recent one.</li>
+    <li>Use <strong>Search</strong> for songs or <strong>Library</strong> for playlists. Tap a playlist to view its tracks and use <strong>Play/Pause</strong>.</li>
+    <li>Tap the song-info bar to open <strong>Now Playing</strong>. Drag the progress bar to seek when the Windows player supports it.</li>
+    <li>In <strong>Settings → Theme</strong>, <strong>Auto</strong> uses green for Spotify and blue for Amazon Music. Choose a Home Screen icon in <strong>WinterBoard → Select Themes</strong>.</li>
+  </ul>
+
+  <h2>Troubleshooting</h2>
+  <ul>
+    <li><strong>The app can’t connect.</strong> Match the full playback address from the launcher, including its code. Confirm both devices are on the same local network.</li>
+    <li><strong>Track info updates but the iPhone is silent.</strong> Check that <strong>Listen on iPhone</strong> is active and Edge’s output matches the launcher’s <strong>Capturing</strong> line.</li>
+    <li><strong>The bridge can’t find the virtual output.</strong> Check that VB-CABLE is installed and that any requested restart has finished.</li>
+    <li><strong>The app shows the wrong service or port 8096 is busy.</strong> Close older bridge and dedicated Edge windows, then start one launcher.</li>
+    <li><strong>Search or Library won’t load.</strong> Restart the Windows launcher, check the sign-in in the dedicated Edge window, and refresh the Library on the iPhone.</li>
+    <li><strong>The audio stutters.</strong> Stop listening, select <strong>Settings → Playback mode → Standard</strong>, and start listening again. Standard buffers longer.</li>
+  </ul>
+</main>
+</html>
