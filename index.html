@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Music Bridge Cydia Repo</title>
+<style>
+  body { margin: 0; background: #edf3f8; color: #15283b; font: 16px/1.55 Helvetica, Arial, sans-serif; }
+  header { background: #173a60; color: white; padding: 18px 22px; }
+  main { max-width: 36em; margin: 0 auto; padding: 12px 22px 32px; }
+  h1 { font-size: 24px; margin: 0; }
+  h2 { font-size: 17px; margin-top: 24px; }
+  a { color: #174b77; }
+  .source { word-wrap: break-word; background: white; border: 1px solid #c8d8e5; padding: 10px; }
+</style>
+<header><h1>Music Bridge</h1></header>
+<main>
+  <p>Play Spotify or Amazon Music from a Windows PC on a jailbroken iPhone running iOS 6.</p>
+  <h2>Add the Cydia source</h2>
+  <p>In Cydia, open <strong>Manage → Sources → Edit → Add</strong> and enter this page’s address.</p>
+  <p class="source" id="source">Use the full address of this page, including the repo name.</p>
+  <p>Install <strong>Music Bridge</strong>. Open the app, then enter the local address printed by your Windows Music Bridge launcher under <strong>Settings</strong>.</p>
+  <h2>Packages</h2>
+  <ul>
+    <li><a href="debs/net.local.musicbridge_1.8.11_iphoneos-arm.deb">Music Bridge 1.8.11</a></li>
+    <li><a href="debs/net.local.musicbridge.icons_1.1.2_iphoneos-arm.deb">Music Bridge Retro Icons 1.1.2</a></li>
+    <li><a href="debs/net.local.quietvoicemail_1.0.0_iphoneos-arm.deb">Quiet Voicemail 1.0.0</a></li>
+  </ul>
+</main>
+<script>
+  document.getElementById('source').textContent = location.href.split(/[?#]/)[0].replace(/index\.html$/, '');
+</script>
+</html>

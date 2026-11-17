@@ -1,0 +1,45 @@
+Package: net.local.musicbridge
+Name: Music Bridge
+Version: 1.8.11
+Architecture: iphoneos-arm
+Description: Native iOS 6 player for the Windows Music Bridge.
+Maintainer: Music Bridge
+Author: Declan Jones
+Section: Multimedia
+Depends: firmware (>= 6.0), net.local.musicbridge.icons (>= 1.1.2)
+Filename: ./debs/net.local.musicbridge_1.8.11_iphoneos-arm.deb
+Size: 73278
+MD5sum: 86fc84c81f9044f2446c3497df4f2844
+SHA1: c1d765d5910e6ca4a283c40c4f62559f470bd31c
+SHA256: 827ff1f05f8d97349f8f1074d1574922239c1e5962323b8adf7ff34347a04d23
+
+Package: net.local.musicbridge.icons
+Name: Music Bridge Retro Icons
+Version: 1.1.2
+Architecture: iphoneos-arm
+Description: Three selectable Music Bridge Home Screen icons with matching labels.
+Maintainer: Music Bridge
+Author: Declan Jones
+Section: Themes
+Depends: firmware (>= 6.0), winterboard, mobilesubstrate
+Filename: ./debs/net.local.musicbridge.icons_1.1.2_iphoneos-arm.deb
+Size: 151094
+MD5sum: c8a9f4dc5f6ad360228369ef177c4b9f
+SHA1: d8a73f02defaacbe15d961d78183d4254595a2ae
+SHA256: c8615d425d24d12387d68fa00feb929128c1ee8ea17fcbebfcfd444d9c611bff
+
+Package: net.local.quietvoicemail
+Name: Quiet Voicemail
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Suppresses recognizable voicemail alerts and indicators on iOS 6.
+Maintainer: Declan Jones
+Author: Declan Jones
+Section: Tweaks
+Depends: firmware (>= 6.0), firmware (<< 7.0), mobilesubstrate
+Filename: ./debs/net.local.quietvoicemail_1.0.0_iphoneos-arm.deb
+Size: 4182
+MD5sum: a45e5018b05344870ecfb3754bb567fd
+SHA1: 91421099eb9fd14a24642b3690af15192ca266c6
+SHA256: d9c969554dee619f6d3b20d649ed8a361c9abe290407b1adcedda43bcfc1dc4b
+

@@ -1,0 +1,20 @@
+Origin: Music Bridge
+Label: Music Bridge
+Suite: stable
+Version: 1.0
+Codename: stable
+Architectures: iphoneos-arm
+Components: main
+Description: Music Bridge for jailbroken iOS 6 devices
+MD5Sum:
+ 9a3ba8bc3e61e917b5a150a50defc19b 1621 Packages
+ 40fbc0718821bf3b01b2e62a4c45649a 766 Packages.gz
+ bd9ecb895cdb9a6912678b3aa1f50070 867 Packages.bz2
+SHA1:
+ 5ebf55f80c9c3dbfdb0cd52c9de97c5d330b3302 1621 Packages
+ e5c878a98652490db609d21417c3450f47e2a6be 766 Packages.gz
+ 18f3dd8177658ca8ee9afa820f3f2dd8ec7b8251 867 Packages.bz2
+SHA256:
+ d87e2a4483322765f2fc02cd2bbc2bdd176989f44d58f8a6690400ddffcc3406 1621 Packages
+ d6ed07f0b5ea35713708cfaad48235ea00e71bf3946dfce47781ada0559d0dd8 766 Packages.gz
+ e69d11509cfcc3af951d37a0594496782b40a40e43b92bf0cea01397189cea43 867 Packages.bz2
