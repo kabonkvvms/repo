@@ -7,14 +7,14 @@ Architectures: iphoneos-arm
 Components: main
 Description: Music Bridge for jailbroken iOS 6 devices
 MD5Sum:
- 5dc418770b90acdd36cb66f3666323c3 1641 Packages
- 3037fe0c4a5bca26338244b90dae8d0f 774 Packages.gz
- 6afbf9d57de13f2482928bb3071624b1 884 Packages.bz2
+ bad185113aa42f2f1d0d5072c8d6f08d 1641 Packages
+ fbbd6ba47ca20894b4b153674262d1e3 777 Packages.gz
+ 212bfd16b7c8d2bae4accc1de4699bc6 893 Packages.bz2
 SHA1:
- ab1f7e1dd11d662ab24ed31db7d4adda664fb842 1641 Packages
- 695650abbd18f667848ebd26b1fda8b06cd8f55b 774 Packages.gz
- 026f1c94a4146d7e5b6360a6754eb8cf6ab9f05f 884 Packages.bz2
+ a7e251c97abc42abeb45c1d9dbd413766b4f7c47 1641 Packages
+ 3d627c30f526c13583214f9181093e250883985a 777 Packages.gz
+ a1ad15fdd8f9846d621821b7326dcf6d208dcf65 893 Packages.bz2
 SHA256:
- 728d88e573224853da7003c1865caa126cd911bbefe4ad920701b44637c2e0b9 1641 Packages
- fc8de6007d5dff6d414d9fec38cf2c89bb36bda7c6e8c10bb62e617c2727b666 774 Packages.gz
- 3004122e70562acc3b399e849e3541a6c182a86deed4ecacacfe53acf86428c2 884 Packages.bz2
+ c7edb772a84d65c3476912cde833dc3b72f7dfe5551eafa9a492a8cfdf88b9ab 1641 Packages
+ 37bde72ca66ddc09ea9617610af93e24f76ef3a17704e74dd34ba63e0fc229c4 777 Packages.gz
+ 7b70004c7dc0311d6d4549df7b202915687c9585278efdbb636559dabcbedaa6 893 Packages.bz2
