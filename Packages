@@ -1,17 +1,18 @@
 Package: net.local.musicbridge
 Name: Music Bridge
-Version: 1.8.13
-Architecture: iphoneos-arm
 Description: Native iOS 6 player for the Windows Music Bridge.
 Maintainer: Music Bridge
 Author: Declan Jones
 Section: Multimedia
 Depends: firmware (>= 6.0), net.local.musicbridge.icons (>= 1.1.3)
-Filename: ./debs/net.local.musicbridge_1.8.13_iphoneos-arm.deb
-Size: 73436
-MD5sum: 7023244b783e02a4653657d5af244a82
-SHA1: 87fca593172fefdb499992dc3fa3cabc80af0c02
-SHA256: f2e6fa02e271c773df770770cf41ceb670007d309d2caf09eaa8175b39cb2345
+Architecture: iphoneos-arm
+Version: 1.8.14
+Installed-Size: 172
+Filename: ./debs/net.local.musicbridge_1.8.14_iphoneos-arm.deb
+Size: 74868
+MD5sum: b4f226c997894cfe87a6d9bc4ae2a8a1
+SHA1: 1496b1d2070563cbad2509f2c723a02875c54738
+SHA256: b7abf80423bebc9d0fc781c0dfc562502b294581ea658b05085b7f5f6fdcb25d
 
 Package: net.local.musicbridge.icons
 Name: Music Bridge Retro Icons
